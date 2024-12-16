@@ -550,6 +550,15 @@
             </div>
           </div>
         </div>
+        <script>
+          const newsletterForm = document.getElementById("newsletter-form");
+          const newsletterModal = new bootstrap.Modal(document.getElementById("newsletterModal"));
+        
+          newsletterForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+            newsletterModal.show(); // Show the modal
+          });
+        </script>        
       </div>
     </main>
     <footer>
