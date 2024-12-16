@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BookVerse</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/logo (.png)/logo_favicon.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- announcement bar -->
+      <div class="announcement_container dark_background text-uppercase">
+        <div class="container">
+          <div class="py-1 text-center">
+            Free delivery on orders over $35 in Lebanon
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container-fluid">
+          <!-- navbar visible on smaller screens -->
+          <nav class="navbar d-lg-none" role="navigation">
+            <div class="container-fluid">
+              <a class="navbar-brand mx-auto logo" href="index.html"
+                ><img src="/assets/logo (.png)/logo.png" alt="BookVerse"
+              /></a>
+              <i
+                class="bi bi-list"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+              ></i>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasDarkNavbar"
+              >
+                <div class="offcanvas-header">
+                  <i
+                    class="bi-x-lg"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></i>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav flex-column gap-4">
+                    <li><a class="nav-item" href="index.html">Homepage</a></li>
+                    <li>
+                      <a class="nav-item" class="nav-link" href="shop.html">
+                        Shop</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-item" class="nav-link" href="topPicks.html"
+                        >Top Picks</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-item" class="nav-link" href="b2b.html"
+                        >B2B</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-item" class="nav-link" href="about.html"
+                        >Our Story</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-item" class="nav-link" href="support.html"
+                        >Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-item" class="nav-link" href="contact.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-item" class="nav-link" href="cart.html"
+                        >Cart</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <button
+                        class="button-1 w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModalCenter"
+                      >
+                        Login / Signup
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- navbar visible on medium and larger screens -->
+          <nav
+            class="navbar navbar-expand-lg d-none d-lg-flex"
+            role="navigation"
+          >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- left navbar -->
+                <ul class="navbar-nav">
+                  <li><a class="nav-link" href="index.html">HomePage</a></li>
+                  <li><a class="nav-link" href="shop.html">Shop</a></li>
+                  <li>
+                    <a class="nav-link" href="topPicks.html">Top Picks</a>
+                  </li>
+                  <li><a class="nav-link" href="b2b.html">B2B</a></li>
+                </ul>
+                <!-- logo -->
+                <a class="navbar-brand mx-auto px-5 logo" href="index.html"
+                  ><img src="/assets/logo (.png)/logo.png" alt="BookVerse"
+                /></a>
+                <!-- right navbar -->
+                <ul class="navbar-nav">
+                  <li><a class="nav-link" href="about.html">Our Story</a></li>
+                  <li><a class="nav-link" href="support.html">Support</a></li>
+                  <li>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="cart.html"
+                      ><img
+                        src="/assets/svg/cart.svg"
+                        class="w-100 mb-1 mr-1"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <button
+                      class="button-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModalCenter"
+                    >
+                      Login / Signup
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- modal for Login/Signup -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Login to BookVerse
+            </h5>
+            <!-- close button -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Login/Signup form -->
+            <form>
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Enter username"
+              />
+              <br />
+
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter password"
+              />
+              <small class="text-secondary ml-2" style="font-size: 14px"
+                ><a href="">Forgot password?</a></small
+              >
+              <br /><br />
+
+              <button type="submit" class="button-1 w-100">Login</button
+              ><br /><br />
+
+              <!-- Google button -->
+              <div class="my-3">
+                <button class="button-1 w-100">
+                  <i class="bi bi-google"></i> Sign in with Google
+                </button>
+              </div>
+
+              <!--Apple button -->
+              <div class="my-3">
+                <button class="button-1 w-100">
+                  <i class="bi bi-apple"></i> Sign in with Apple
+                </button>
+              </div>
+              <p class="text-center text-secondary" style="font-size: 14px">
+                Don't have an account? <a href="">Sign up</a>
+              </p>
+              <br />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <main>
+      <section class="about-us-section1">
+        <div class="container">
+          <div class="flex">
+            <img
+              src="/assets/images/pictures/store.jpg"
+              alt="Inside BookVerse Store in Beirut, a cozy space for book lovers"
+            />
+            <div class="mt-5 mb-5">
+              <h1>How Two Friends Built Lebanon's Favorite Digital Library</h1>
+              <br />
+              <h6>
+                It all began in a cozy corner of Beirut over a cup of coffee,
+                with two passionate book lovers, Maya and Lina. Their dream? To
+                bring reading to every Lebanese, no matter where they were.
+                Together, they launched BookVerse—an online library offering a
+                treasure trove of books in Arabic, English, and French, all
+                accessible at your fingertips.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us-section2">
+        <div class="container">
+          <div class="flex">
+            <div class="mt-5 mb-5">
+              <h1>More Than Just a Library—It’s a Movement</h1>
+              <br />
+              <h6>
+                BookVerse is not just about reading; it’s about building
+                connections. From classic Lebanese literature to global
+                bestsellers, it's a space where every reader can find something
+                to love. Whether you’re exploring new books, joining a virtual
+                book club, or discovering emerging Lebanese authors, BookVerse
+                is a vibrant community. Maya brings her book recommendations,
+                Lina creates the ultimate user experience, and together, they’ve
+                crafted something unique that continues to grow.
+              </h6>
+            </div>
+            <img
+              src="/assets/images/pictures/b2b.jpg"
+              alt="Community and books coming together in a shared love of literature"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="dark_background py-5">
+        <div class="container footer_container">
+          <!-- left footer container -->
+          <div class="left_footer_container">
+            BookVerse
+            <br /><br />
+            <h2 class="mb-5">Books awaken the mind and stir the soul.</h2>
+            <small class="copyright"
+              >Copyright &copy 2024 BookVerse.
+              <span style="padding-left: 2px">All rights reserved.</span></small
+            >
+          </div>
+
+          <!-- right footer container -->
+          <div class="right_footer_container">
+            <div>
+              <p class="mb-4">Quick Links</p>
+              <ul class="flex">
+                <li><a href="support.html">Support</a></li>
+                <li><a href="topPicks.html">Top Picks</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="b2b.html">Business to business</a></li>
+                <li><a href="contact.html">Request a book</a></li>
+                <li>
+                  <a href="index.html#newsletter-form"
+                    >Subscribe to our newsletter</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="mb-4">Follow us!</p>
+              <ul class="flex">
+                <li><a href="">Instagran</a></li>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Pinterest</a></li>
+                <li><a href="">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
