@@ -405,13 +405,13 @@ footer li a:hover {
 }
 
 .service2 {
-  background-image: url("/assets/images/pictures/b2bpic2.jpg");
+  background-image: url("../assets/images/pictures/b2bpic2.jpg");
   grid-column: 9/13;
   grid-row: 3/11;
 }
 
 .service3 {
-  background-image: url("/assets/images/pictures/b2bpic3.jpg");
+  background-image: url("../assets/images/pictures/b2bpic3.jpg");
   grid-column: 4/9;
   grid-row: 18/27;
 }
