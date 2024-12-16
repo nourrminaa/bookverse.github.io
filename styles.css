@@ -103,7 +103,7 @@ h3 {
 }
 
 h6 {
-  font-size: clamp(12px, 1.5vw, 20px);
+  font-size: clamp(18px, 1.5vw, 20px);
   font-weight: 300;
   font-style: normal;
   line-height: clamp(30px, 4vw, 40px);
