@@ -236,6 +236,10 @@ a:hover {
   width: 450px;
 }
 
+.navr{
+  margin-left: -112px;
+}
+
 /* Left container */
 .container_left ul {
   gap: 34px;
